@@ -1,3 +1,18 @@
-@mixin heading-shadow($color) {
+@mixin heading-shadow($color:  map-get($colors , defaultColor )) {
+    @if(lightness($color)< 25%){
+        $color: lighten($color, 10%);
+    }
+    @else{
+        $color: darken($color, 10%);
+    }
+    
     text-shadow: .55rem .55rem $color;
+}
+
+@mixin typo-size(){
+    @each $key, $size in $sizes {
+        &--#{$key} {
+            font-size: $size;
+        }
+    }
 }

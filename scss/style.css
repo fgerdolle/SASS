@@ -11,17 +11,19 @@ ul {
   list-style: none;
   text-align: right;
 }
+
 ul li {
   display: inline;
   font-size: 3rem;
   color: #c1e769;
   text-shadow: 0.55rem 0.55rem #242424;
 }
+
 ul li:hover {
   color: #0882a1;
 }
 
-input, button, textarea, h1 {
+h1, textarea, button, input {
   color: #33cef5;
   font-size: 2rem;
   font-weight: 100;
@@ -31,9 +33,11 @@ input, button, textarea, h1 {
 .header--small {
   font-size: 40px;
 }
+
 .header--medium {
   font-size: 80px;
 }
+
 .header--large {
   font-size: 110px;
 }
@@ -41,14 +45,16 @@ input, button, textarea, h1 {
 h1 {
   text-shadow: 0.55rem 0.55rem #363b39;
 }
+
 h1--small {
   font-size: 40px;
 }
+
 h1--medium {
   font-size: 80px;
 }
+
 h1--large {
   font-size: 110px;
 }
-
 /*# sourceMappingURL=style.css.map */

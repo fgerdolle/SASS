@@ -1,4 +1,13 @@
-$primary: rgb(21, 222, 48);
-$navLiColor:#D6FFF5;
-$navLiHoverColor: #33cef5;
+$colors:(
+    primary: rgb(21, 222, 48),
+    navLiColor:rgb(193, 231, 105),
+    navLiHoverColor: #33cef5,
+    defaultColor: rgb(79, 85, 83)
+);
 
+
+$sizes:(
+    small: 40px,
+    medium: 80px,
+    large: 110px
+);

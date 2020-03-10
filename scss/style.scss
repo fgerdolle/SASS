@@ -3,7 +3,7 @@
 
 body{
 
-    background-color: $primary;
+    background-color: map-get($colors , primary );
 }
 /*ne pas oublié le & pour le:hover  sinon le hover ne sera pas collé au li en CSS
 darken est un outil fournit par SASS pour assombrir une couleur
@@ -15,23 +15,29 @@ ul{
         li{
             display: inline;
             font-size: 3rem;
-            color: $navLiColor;
+            color:map-get($colors , navLiColor );
             @include heading-shadow(rgb(10, 10, 10));
             &:hover{  
-                color: darken($navLiHoverColor,25%) ;
+                color: darken(map-get($colors , navLiHoverColor ),25%) ;
             }
         }
 }
 
 %typographie{
-    color : $primary;
+    color : map-get($colors , navLiHoverColor );
     font-size: 2rem;
     font-weight: 100;
     line-height: 1.7;
 
 }
+.header{
+    @include typo-size;
+ 
+}
 h1{
     @extend %typographie;
+    @include heading-shadow; 
+    @include typo-size;
 }
 textarea{
     @extend %typographie;
