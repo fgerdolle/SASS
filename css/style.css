@@ -1,0 +1,31 @@
+@charset "UTF-8";
+body {
+  background-color: #15de30;
+}
+
+/*ne pas oublié le & pour le:hover  sinon le hover ne sera pas collé au li en CSS
+darken est un outil fournit par SASS pour assombrir une couleur
+lighten pour l'inverse 
+*/
+ul {
+  list-style: none;
+  text-align: right;
+}
+ul li {
+  display: inline;
+  font-size: 3rem;
+  color: #D6FFF5;
+  text-shadow: 0.55rem 0.55rem #0a0a0a;
+}
+ul li:hover {
+  color: #0882a1;
+}
+
+input, button, textarea, h1 {
+  color: #15de30;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+/*# sourceMappingURL=style.css.map */

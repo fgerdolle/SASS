@@ -1,0 +1,44 @@
+@import 'variable';
+@import 'typo';
+
+body{
+
+    background-color: $primary;
+}
+/*ne pas oublié le & pour le:hover  sinon le hover ne sera pas collé au li en CSS
+darken est un outil fournit par SASS pour assombrir une couleur
+lighten pour l'inverse 
+*/
+ul{
+    list-style: none;
+    text-align: right;
+        li{
+            display: inline;
+            font-size: 3rem;
+            color: $navLiColor;
+            @include heading-shadow(rgb(10, 10, 10));
+            &:hover{  
+                color: darken($navLiHoverColor,25%) ;
+            }
+        }
+}
+
+%typographie{
+    color : $primary;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.7;
+
+}
+h1{
+    @extend %typographie;
+}
+textarea{
+    @extend %typographie;
+}
+button{
+    @extend %typographie;
+}
+input{
+    @extend %typographie;
+}
